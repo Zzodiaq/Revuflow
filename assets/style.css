@@ -80,9 +80,17 @@ nav .logo img {
   margin: 0;
   padding: 0;
 }
+.offer h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
 .offer .card {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  line-height: 1.5rem;
   flex-direction: column;
   padding: 3rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -118,7 +126,7 @@ nav .logo img {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 .product .product__container .product__container-left .stripe {
   display: flex;
@@ -134,13 +142,23 @@ nav .logo img {
   gap: 2rem;
   padding: 4rem;
 }
+.pricing h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
 .pricing .modalSwitch {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 .pricing .modalSwitch .left {
-  color: black;
+  color: white;
+  background-color: #82A0D8;
   padding: 0.9rem 1rem;
   border-radius: 20px;
 }
@@ -158,7 +176,7 @@ nav .logo img {
 }
 .pricing .pricing__card-container-annual {
   display: none;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .pricing .pricing__card-container-annual .pricing__card {
@@ -201,6 +219,7 @@ nav .logo img {
   display: flex;
   align-items: center;
   font-weight: bold;
+  justify-content: center;
   gap: 1rem;
 }
 .pricing .pricing__card-container-annual .pricing__card .pric p {
@@ -226,7 +245,7 @@ nav .logo img {
 }
 .pricing .pricing__card-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .pricing .pricing__card-container .pricing__card {
@@ -269,6 +288,7 @@ nav .logo img {
   display: flex;
   align-items: center;
   font-weight: bold;
+  justify-content: center;
   gap: 1rem;
 }
 .pricing .pricing__card-container .pricing__card .pric p {
@@ -354,7 +374,7 @@ footer .right {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #82A0D8;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

@@ -30,6 +30,8 @@ window.addEventListener("scroll", () => {
             right.style.backgroundColor = "black"
             right.style.color = "#FFD95A"
         } else {
+            left.style.backgroundColor= "#82A0D8"
+            left.style.color = "white"
             modalpricing.style.display = "grid"
             modalpricingAnnual.style.display = "none"
             right.style.backgroundColor = "white"
