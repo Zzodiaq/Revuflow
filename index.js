@@ -1,5 +1,5 @@
 
-const navbar = document.querySelector("#navbar");
+const navbar = document.querySelector("div.navbar");
 const modalSwitch = document.querySelector(".modalSwitch");
 const pricingCheckbox = modalSwitch.querySelector("input[type='checkbox']");
 const left = modalSwitch.querySelector(".left");
@@ -84,15 +84,27 @@ function handlePricingCheckbox() {
     });
 }
 
+const navLinks = document.querySelectorAll('a.nav-link');
 window.addEventListener("scroll", () => {
 
     if (window.scrollY > 50) {
         navbar.setAttribute("class", "navbar scrolled navstyle");
         // navbar.setAttribute("class", "navbar navstyle")
+        navLinks.forEach((navlink) => navlink.style.color = "#EF9595");
     } else {
         navbar.classList.remove("scrolled");
         navbar.classList.remove("navstyle");
+        navLinks.forEach((navlink) => navlink.style.color = "#7E7E7E");
     }
+
+    const animatedDivs = document.querySelectorAll('.animated');
+    animatedDivs.forEach((animatedDiv) => {
+        const rect = animatedDiv.getBoundingClientRect();
+
+        if(rect.top <= window.innerHeight && rect.bottom >= 0) {
+            animatedDiv.style.opacity = '1';
+        }
+    })
 });
 
 pricingCheckbox.addEventListener("change", () => {

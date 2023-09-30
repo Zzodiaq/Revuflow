@@ -1,61 +1,16 @@
 body {
     margin: 0;
     padding: 0;
-    // font-family: 'Lilita One', cursive;
-    font-family: 'Montserrat', sans-serif;
-}
-
-nav {
-    z-index: 999;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    gap: 8rem;
-    font-family: 'Lilita One', cursive;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    width: 100%;
-    .nav__link {
-        display: flex;
-        align-items: center;
-        gap: 4rem;
-        a {
-            text-decoration: none;
-            color: #7b7b7b;
-        }
-        a:hover {
-            color: black;
-        }
-    }
-    .logo {
-        img {
-            width: 180px;
-            height: 80px;
-        }
-
-    }
-}
-
-.navstyle {
-    .nav__link{
-        a {
-            color : #EF9595;
-        }
-    }
-}
-
-.scrolled {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    font-family: 'Avenir Next', cursive;
+    // font-family: 'Montserrat', sans-serif;
+    background-color: rgba(211, 211, 211, 0.2509803922);
 }
 
 .introduction {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8rem 4rem 4rem 4rem;
     flex-direction: column;
-    background-color: #D3D3D340;
     h1 {
         text-align: center;
         color: #001A33;
@@ -75,33 +30,57 @@ nav {
 }
 
 .offer {
-    display: grid;
-    padding: 4rem;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
     h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        margin: 0;
-        padding: 0;
+        text-align: left;
+        color: #001A33;
+        font-size: 3rem;
     }
-    h2 {
-        display: flex;
-        align-items: center;
-        font-size: 1.8rem;
-        margin: 0;
-        padding: 0;
-    }
-    .card {
-        display: flex;
-        justify-content: start;
-        line-height: 1.5rem;
-        flex-direction: column;
-        padding: 3rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-        border-radius: 15px;
+    div.offer-cards {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        h2 {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            margin: 0;
+            padding: 0;
+        }
+        .card {
+            display: flex;
+            justify-content: end;
+            line-height: 1.5rem;
+            flex-direction: column;
+            padding: 30px 20px;
+            box-shadow: rgba(100, 100, 111, 0.1) 0 7px 29px 0;
+            background-color: #fbfbfb;
+            border-radius: 15px;
+            div.card-emoji {
+                display: flex;
+                width: 62px;
+                height: 62px;
+                margin-bottom: 16px;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #ececec;
+                border-radius: 60px;
+                background-color: #fbfbfb;
+                box-shadow: 0 6px 71px 0 rgba(35, 35, 35, 0.09);
+                text-align: center;
+                > .emoji {
+                    font-size: 24px;
+                }
+            }
+            &:hover {
+                transition: box-shadow 350ms ease, transform 375ms cubic-bezier(.175, .885, .32, 1.275), background-color 325ms ease;
+                transform: scale(1.03);
+                box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+            }
+        }
     }
 }
 
@@ -109,13 +88,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
     gap: 4rem;
-    background-color: #D3D3D340;
-    h1 {
-        font-size: 3rem;
-        color: #001A33;
-    }
     .product__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -145,17 +118,10 @@ nav {
 }
 
 .pricing {
-    h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
-        margin: 0;
-        padding: 0;
-    }
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
     padding: 4rem;
     .modalSwitch {
         display: flex;
@@ -185,11 +151,36 @@ nav {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        max-width: 1200px;
         .pricing__card {
             display: flex;
             flex-direction: column;
-            padding: 1rem;
-            box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+            padding: 1.2rem;
+            border-radius: 14px;
+            box-shadow: 0 14px 17px 0 rgba(35, 35, 35, 0.05);
+            background-color: #fbfbfb;
+            &:hover {
+                background-color: white;
+                transition: box-shadow 350ms ease, transform 375ms cubic-bezier(.175, .885, .32, 1.275), background-color 325ms ease;
+                box-shadow: 0 14px 71px 0 rgba(35, 35, 35, 0.2);
+            }
+            .pricing-includes {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                grid-column-gap: 18px;
+                grid-row-gap: 18px;
+                font-weight: 500;
+                .include {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    font-weight: 500;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
             .mostPop{
                 width: fit-content;
                 padding: 8px;
@@ -207,19 +198,9 @@ nav {
                 border-radius: 10px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
                 h1 {
-
                     margin: 0;
                     font-size: 0.7rem; 
                 }
-            }
-            button {
-                width: 100%;
-                color: white;
-                border: none;
-                background-color: #82A0D8;
-                padding: 1rem 2rem;
-                border-radius: 20px;
-                cursor: pointer;
             }
             .pric {
                 display: flex;
@@ -229,6 +210,7 @@ nav {
                 gap: 1rem;
                 p {
                     font-size: 10px;
+                    font-weight: 400;
                 }
             }
             .pricFalse {
@@ -245,11 +227,8 @@ nav {
     .card-title {
         font-size: 1.5rem;
         color: #001A33;
-    }
-    .include {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+        text-align: center;
+        margin: 5px;
     }
 }
 

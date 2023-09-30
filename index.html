@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/revuflow_logo_notext.png"/>
     <link rel="stylesheet" href="assets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,40 +12,72 @@
     <title>RevuFlow</title>
 </head>
 <body>
-    <nav id="navbar">
-        <div class="logo">
-            <a href="#intro"><img src="assets/images/revufloLogo (2).png" alt="logo"></a>
+    <div class="navbar">
+        <div class="container navbar-container">
+            <div class="navbar-holder">
+                <div class="navbar-container">
+                    <a href="#intro" class="brand nav-brand">
+                        <img src="assets/images/revufloLogo (2).png" class="brand-image" alt="logo">
+                    </a>
+                    <nav class="nav-menu">
+                        <div class="nav-links-holder">
+                            <div class="nav-links-container">
+                                <div class="nav-links">
+                                    <a href="#offer" class="nav-link">Offerings</a>
+                                    <a href="#product" class="nav-link">The product</a>
+                                    <a href="#pricing" class="nav-link">Pricing</a>
+                                    <a href="#contact" class="nav-link">Contact us</a>
+                                </div>
+                                <div class="nav-button-holder">
+                                    <a href="#pricing" class="navbar-button">Start now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="nav__link">
-            <a href="#offe">Offerings</a>
-            <a href="#prod">The product</a>
-            <a href="#price">Pricing</a>
-            <a href="#contact">Contact us</a>
-        </div>
-    </nav>
-    <section class="introduction" id="intro">
+    </div>
+    <div class="container introduction" id="intro">
         <h1>Display your Google reviews in seconds with RevuFlow</h1>
         <div class="introduction__demoImage">
             <img src="assets/images/urba.png" alt="error">
         </div>
-    </section>
-    <section class="offer" id="offe">
+    </div>
+    <div class="container white-section offer animated" id="offer">
         <h1>What we offer</h1>
-        <div class="card a">
-            <h2>Import Google Reviews</h2>
-            <p>Effortlessly import your existing Google reviews to your website in just a few simple clicks. Instantly boost trust and customer engagement while saving precious time, thanks to RevuFlow's user-friendly interface and seamless integration capabilities.</p>
+        <div class="offer-cards">
+            <div class="card animated thin-border">
+                <div class="card-emoji">
+                    <div class="emoji">🔄</div>
+                </div>
+                <div class="card-content">
+                    <h2>Import Google Reviews</h2>
+                    <p class="grey-text">Import Google reviews in a few clicks with RevuFlow. Boost trust and save time.</p>
+                </div>
+            </div>
+            <div class="card animated thin-border">
+                <div class="card-emoji">
+                    <div class="emoji">🎨</div>
+                </div>
+                <div class="card-content">
+                    <h2>Stylish Widget Design</h2>
+                    <p class="grey-text">Get a widget that is crafted for your business case and fits your brand seamlessly.</p>
+                </div>
+            </div>
+            <div class="card animated thin-border">
+                <div class="card-emoji">
+                    <div class="emoji">🚀</div>
+                </div>
+                <div class="card-content">
+                    <h2>Save time with RevuFlow</h2>
+                    <p class="grey-text">Add a branded Google Review Widget quickly and easily. No compromises on effectiveness.</p>
+                </div>
+            </div>
         </div>
-        <!-- <div class="card b">
-            <h1>Stylish Widget Design</h1>
-            <p>Get a widget that is crafted for your business case and fits your brand seamlessly.</p>
-        </div> -->
-        <div class="card c">
-            <h2>Save time with RevuFlow</h2>
-            <p>We understand that your time is valuable. That's why we've made the process of adding a branded Google Review Widget to your site as quick and simple as possible. You can enjoy a stylish and effective widget without any compromises.</p>
-        </div>
-    </section>
-    <section class="product" id="prod">
-        <h1>Get Your Google Reviews</h1>
+    </div>
+    <div class="container product animated" id="product">
+        <h1 class="section-title">Get Your Google Reviews</h1>
         <div class="product__container">
             <div class="product__container-rigth">
                 <img src="assets/images/templates.jpg" alt="error">
@@ -64,23 +97,23 @@
                     </div>
             </div>
         </div>
-    </section>
-    <section class="pricing" id="price">
-        <h1>Pricing</h1>
+    </div>
+    <div class="container pricing animated" id="pricing">
+        <h1 class="section-title">Pricing</h1>
         <div class="modalSwitch">
             <div class="left">
-                <p>Monthly Plan</p>
+                <p>Monthly</p>
             </div>
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
             <div class="right">
-                <p>Annual Plan</p>
+                <p>Yearly</p>
             </div>
         </div>
         <div class="pricing__card-container" data-interval="monthly" id="pricing__card-container">
-            <div class="pricing__card" data-plan="standard">
+            <div class="pricing__card thin-border" data-plan="standard">
                 <div class="mostPop">
                     <h1>Most popular</h1>
                 </div>
@@ -90,31 +123,32 @@
                     <p class="interval-text">per<br>month</p>
                 </div>
                 <a target="_blank" href="https://buy.stripe.com/7sIg227rFdqR9IQdQR">
-                    <button>Subscribe</button>
+                    <button class="suscribe-btn">Subscribe</button>
                 </a>
-                <p>This includes :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>30 days trial</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Access to all widgets</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Up to 3 Webflow site integrations</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Basic customization options (e.g., color, layout)</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Standard customer support (<72h response time)</p>
+                <div class="pricing-includes">
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>30 days trial</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Access to all widgets</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Up to 3 Webflow site integrations</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Basic customization options (e.g., color, layout)</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Standard customer support (<72h response time)</p>
+                    </div>
                 </div>
             </div>
-            <div class="pricing__card" data-plan="premium">
+            <div class="pricing__card thin-border" data-plan="premium">
                 <div class="mostPopFalse">
                     <h1>Most popular</h1>
                 </div>
@@ -124,35 +158,36 @@
                     <p class="interval-text">per<br>month</p>
                 </div>
                 <a href=" https://buy.stripe.com/00g1784ft4Ul08g003" target="_blank">
-                    <button>Subscribe</button>
+                    <button class="suscribe-btn">Subscribe</button>
                 </a>
-                <p>This includes :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>30 days trial</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>All form standard plan</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Unlimited Webflow site integrations</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Advanced customization options (e.g., API access, custom CSS)</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Monthly analytics report</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Premium customer support (<12h response time)</p>
+                <div class="pricing-includes">
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>30 days trial</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>All form standard plan</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Unlimited Webflow site integrations</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Advanced customization options (e.g., API access, custom CSS)</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Monthly analytics report</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Premium customer support (<12h response time)</p>
+                    </div>
                 </div>
             </div>
-            <div class="pricing__card" data-plan="custom">
+            <div class="pricing__card thin-border" data-plan="custom">
                 <div class="mostPopFalse">
                     <h1>Most popular</h1>
                 </div>
@@ -161,29 +196,30 @@
                     <h2>$6</h2>
                     <p>per month</p>
                 </div>
-                <a href="https://checkout.stripe.com/c/pay/cs_live_a1kJqHo78Qpdppp0HiN1fPKIHWrpT26J8ENymi9ZhxpfO8m1829Na6zGcN#fidkdWxOYHwnPyd1blppbHNgWjA0S3FdUldMRGl2MjB0VnxWXDdiNURQMF1obDdzcnZWaHdMZ3dLaGprSTVwQj1WV1VAaUJIPDxudVRQUkcyQD19aUNNc0NINEdIcWNKTD1IT2ZwU0pOb3NjNTVgQjVyXUlJcScpJ3VpbGtuQH11anZgYUxhJz8nPXJIYjc3PXNPNUAwMkRMNz09J3gl" target="_blank">
-                    <button>Subscribe</button>
+                <a href="mailto:support@revuflow.net" target="_blank">
+                    <button class="suscribe-btn">Contact us</button>
                 </a>
-                <p>Some ideas :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Personalize your review widgets to match your brand's unique style and visual identity</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Handle Google reviews for multiple business locations through a single, unified dashboard</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Gain deeper insights into customer behavior and review patterns with specialized analytics tools</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>. . .</p>
+                <div class="pricing-includes">
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Personalize your review widgets to match your brand's unique style and visual identity</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Handle Google reviews for multiple business locations through a single, unified dashboard</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Gain deeper insights into customer behavior and review patterns with specialized analytics tools</p>
+                    </div>
+                    <div class="include">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>. . .</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 <footer>
     <div class="left" id="contact">
