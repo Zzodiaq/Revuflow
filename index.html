@@ -68,178 +68,26 @@
     <section class="pricing" id="price">
         <h1>Pricing</h1>
         <div class="modalSwitch">
-            <div class="left" id="left">
+            <div class="left">
                 <p>Monthly Plan</p>
             </div>
                 <label class="switch">
-                    <input type="checkbox" id="check">
+                    <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-            <div class="right" id="right">
+            <div class="right">
                 <p>Annual Plan</p>
             </div>
         </div>
-        <div class="pricing__card-container-annual" id="pricing__card-container-annual">
-            <!-- <div class="pricing__card">
-                <div class="mostPopFalse">
-                    <h1>Most popular</h1>
-                </div>
-                <h1 class="card-title">Free plan</h1>
-                <div class="pric">
-                    <h2>$0</h2>
-                    <p>year</p>
-                </div>
-                <button>Subscribe</button>
-                <p>This includes :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Access to default widget</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>1 Webflow site integration</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Basic customer support (<1 week response time)</p>
-                </div>
-            </div> -->
-            <div class="pricing__card">
+        <div class="pricing__card-container" data-interval="monthly" id="pricing__card-container">
+            <div class="pricing__card" data-plan="standard">
                 <div class="mostPop">
                     <h1>Most popular</h1>
                 </div>
                 <h1 class="card-title">Standard plan</h1>
                 <div class="pric">
-                    <h2>$30</h2>
-                    <p>per<br>year</p>
-                </div>
-                <a href="https://buy.stripe.com/3cs8zAdQ3fyZ5sAbIK" target="_blank">
-                    <button>Subscribe</button>
-                </a>
-                <p>This includes :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>30 days trial</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Access to all widgets</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Up to 3 Webflow site integrations</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Basic customization options (e.g., color, layout)</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Standard customer support (<72h response time)</p>
-                </div>
-            </div>
-            <div class="pricing__card">
-                <div class="mostPopFalse">
-                    <h1>Most popular</h1>
-                </div>
-                <h1 class="card-title">Premium plan</h1>
-                <div class="pric">
-                    <h2>$60</h2>
-                    <p>per<br>year</p>
-                </div>
-                <a href="https://buy.stripe.com/cN28zA9zN4Ul3ks7sw" target="_blank">
-                    <button>Subscribe</button>    
-                </a>
-                <p>This includes :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>30 days trial</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>All form standard plan</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Unlimited Webflow site integrations</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Advanced customization options (e.g., API access, custom CSS)</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Monthly analytics report</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Premium customer support (<12h response time)</p>
-                </div>
-            </div>
-            <div class="pricing__card">
-                <div class="mostPopFalse">
-                    <h1>Most popular</h1>
-                </div>
-                <h1 class="card-title">Custom plan</h1>
-                <div class="pricFalse">
-                    <h2>$6</h2>
-                    <p>per<br>year</p>
-                </div>
-                <a href="https://checkout.stripe.com/c/pay/cs_live_a1kJqHo78Qpdppp0HiN1fPKIHWrpT26J8ENymi9ZhxpfO8m1829Na6zGcN#fidkdWxOYHwnPyd1blppbHNgWjA0S3FdUldMRGl2MjB0VnxWXDdiNURQMF1obDdzcnZWaHdMZ3dLaGprSTVwQj1WV1VAaUJIPDxudVRQUkcyQD19aUNNc0NINEdIcWNKTD1IT2ZwU0pOb3NjNTVgQjVyXUlJcScpJ3VpbGtuQH11anZgYUxhJz8nPXJIYjc3PXNPNUAwMkRMNz09J3gl" target="_blank">
-                    <button>Subscribe</button>
-                </a>
-                <p>Some ideas :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Personalize your review widgets to match your brand's unique style and visual identity</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Handle Google reviews for multiple business locations through a single, unified dashboard</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Gain deeper insights into customer behavior and review patterns with specialized analytics tools</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>. . .</p>
-                </div>
-            </div>
-        </div>
-        <div class="pricing__card-container" id="pricing__card-container">
-            <!-- <div class="pricing__card">
-                <div class="mostPopFalse">
-                    <h1>Most popular</h1>
-                </div>
-                <h1 class="card-title">Free plan</h1>
-                <div class="pric">
-                    <h2>$0</h2>
-                    <p>per<br>month</p>
-                </div>
-                    <button>Subscribe</button>
-                <p>This includes :</p>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Access to default widget</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>1 Webflow site integration</p>
-                </div>
-                <div class="include">
-                    <i class="fa-regular fa-circle-check"></i>
-                    <p>Basic customer support (<1 week response time)</p>
-                </div>
-            </div> -->
-            <div class="pricing__card">
-                <div class="mostPop">
-                    <h1>Most popular</h1>
-                </div>
-                <h1 class="card-title">Standard plan</h1>
-                <div class="pric">
-                    <h2>$3</h2>
-                    <p>per<br>month</p>
+                    <h2 class="plan-price">$3</h2>
+                    <p class="interval-text">per<br>month</p>
                 </div>
                 <a target="_blank" href="https://buy.stripe.com/7sIg227rFdqR9IQdQR">
                     <button>Subscribe</button>
@@ -266,14 +114,14 @@
                     <p>Standard customer support (<72h response time)</p>
                 </div>
             </div>
-            <div class="pricing__card">
+            <div class="pricing__card" data-plan="premium">
                 <div class="mostPopFalse">
                     <h1>Most popular</h1>
                 </div>
                 <h1 class="card-title">Premium plan</h1>
                 <div class="pric">
-                    <h2>$6</h2>
-                    <p>per<br>month</p>
+                    <h2 class="plan-price">$6</h2>
+                    <p class="interval-text">per<br>month</p>
                 </div>
                 <a href=" https://buy.stripe.com/00g1784ft4Ul08g003" target="_blank">
                     <button>Subscribe</button>
@@ -304,7 +152,7 @@
                     <p>Premium customer support (<12h response time)</p>
                 </div>
             </div>
-            <div class="pricing__card">
+            <div class="pricing__card" data-plan="custom">
                 <div class="mostPopFalse">
                     <h1>Most popular</h1>
                 </div>

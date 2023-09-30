@@ -93,7 +93,7 @@ nav .logo img {
   line-height: 1.5rem;
   flex-direction: column;
   padding: 3rem;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   border-radius: 15px;
 }
 
@@ -174,75 +174,6 @@ nav .logo img {
   margin: 0;
   font-size: 13px;
 }
-.pricing .pricing__card-container-annual {
-  display: none;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-.pricing .pricing__card-container-annual .pricing__card {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.pricing .pricing__card-container-annual .pricing__card .mostPop {
-  width: fit-content;
-  padding: 8px;
-  border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.pricing .pricing__card-container-annual .pricing__card .mostPop h1 {
-  margin: 0;
-  font-size: 0.7rem;
-}
-.pricing .pricing__card-container-annual .pricing__card .mostPopFalse {
-  visibility: hidden;
-  width: fit-content;
-  padding: 8px;
-  border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-.pricing .pricing__card-container-annual .pricing__card .mostPopFalse h1 {
-  margin: 0;
-  font-size: 0.7rem;
-}
-.pricing .pricing__card-container-annual .pricing__card button {
-  width: 100%;
-  color: white;
-  border: none;
-  background-color: black;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  cursor: pointer;
-}
-.pricing .pricing__card-container-annual .pricing__card .pric {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  justify-content: center;
-  gap: 1rem;
-}
-.pricing .pricing__card-container-annual .pricing__card .pric p {
-  font-size: 10px;
-}
-.pricing .pricing__card-container-annual .pricing__card .pricFalse {
-  visibility: hidden;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.pricing .pricing__card-container-annual .pricing__card .pricFalse p {
-  font-size: 10px;
-}
-.pricing .pricing__card-container-annual .card-title {
-  font-size: 1.5rem;
-  color: #001A33;
-}
-.pricing .pricing__card-container-annual .include {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 .pricing .pricing__card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -252,13 +183,13 @@ nav .logo img {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
 }
 .pricing .pricing__card-container .pricing__card .mostPop {
   width: fit-content;
   padding: 8px;
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 .pricing .pricing__card-container .pricing__card .mostPop h1 {
   margin: 0;
@@ -269,7 +200,7 @@ nav .logo img {
   width: fit-content;
   padding: 8px;
   border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 .pricing .pricing__card-container .pricing__card .mostPopFalse h1 {
   margin: 0;
