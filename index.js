@@ -7,8 +7,9 @@ const right = modalSwitch.querySelector(".right");
 const cardsButtons = document.querySelectorAll('.pricing__card button');
 let interval = document.querySelector('.pricing__card-container').dataset.interval;
 const animatedDivs = document.querySelectorAll('.animated');
+const hamburger = document.querySelector(".nav-button");
+const sideMenu = document.querySelector(".side-menu");
 const navLinks = document.querySelectorAll('a.nav-link');
-// const navlink = document.querySelector(".nav__link");
 const stripeData = {
     monthly: {
         standard: {
@@ -123,6 +124,27 @@ window.addEventListener("scroll", () => {
 });
 
 pricingCheckbox.addEventListener("load", checkPosition);
-pricingCheckbox.addEventListener("DOMContentLoaded", checkPosition);
+document.addEventListener("DOMContentLoaded", () => {
+    checkPosition();
+
+    hamburger.addEventListener("touchstart", (e) => {
+        if (sideMenu.style.width === "60%") {
+            sideMenu.style.width = "0";
+        } else {
+            sideMenu.style.width = "60%";
+        }
+        e.stopPropagation();
+    });
+
+    document.addEventListener("touchstart", () => {
+        if (sideMenu.style.width === "60%") {
+            sideMenu.style.width = "0";
+        }
+    });
+
+    sideMenu.addEventListener("touchstart", (e) => {
+        e.stopPropagation();
+    });
+});
 
 pricingCheckbox.addEventListener("change", handlePricingCheckbox);
