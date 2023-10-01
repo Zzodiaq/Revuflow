@@ -95,10 +95,16 @@ function isElementInViewport(el, offset = 0) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+let offset;
+if (window.innerWidth <= 575) {
+    offset = 1400;
+} else {
+    offset = 600;
+}
 
 function checkPosition() {
     for (const element of animatedDivs) {
-        if (isElementInViewport(element, 600)) {
+        if (isElementInViewport(element, offset)) {
             element.classList.add('active');
         }
     }
