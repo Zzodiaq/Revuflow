@@ -163,7 +163,7 @@ body {
   grid-column-gap: 130px;
   grid-row-gap: 130px;
   grid-auto-columns: 1fr;
-  grid-template-columns: 1.25fr 1fr;
+  grid-template-columns: 1fr 1.25fr;
   grid-template-rows: auto;
 }
 .product .features-holder .grid-layout-img-r .right-el {
