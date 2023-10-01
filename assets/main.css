@@ -51,7 +51,7 @@ body {
 .offer div.offer-cards h2 {
   display: flex;
   align-items: center;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin: 0;
   padding: 0;
 }
@@ -578,7 +578,7 @@ div.navbar {
 div.navbar .navbar-container {
   display: flex;
   height: 100%;
-  padding: 0 2em;
+  padding: 0;
   align-items: center;
 }
 div.navbar .navbar-container .nav-button {
