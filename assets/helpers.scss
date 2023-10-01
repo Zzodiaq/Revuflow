@@ -21,9 +21,24 @@ html {
   border: 1px solid #ececec;
 }
 
+@keyframes slide-up-fade-in {
+   0% {
+     opacity: 0;
+     transform: translateY(30px);
+   }
+   100% {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
+
 .animated {
   opacity: 0;
-  transition: opacity 1.25s ease-out, transform 0.5s ease-out;
+  transform: translateY(30px);
+}
+
+.animated.active {
+  animation: slide-up-fade-in 1s ease-out forwards;
 }
 
 h1.section-title {
@@ -157,4 +172,39 @@ div.navbar {
       }
     }
   }
+}
+
+div.card-emoji {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 16px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ececec;
+  border-radius: 60px;
+  background-color: #fbfbfb;
+  box-shadow: 0 6px 71px 0 rgba(35, 35, 35, 0.09);
+  text-align: center;
+
+  > .emoji {
+    font-size: 24px;
+  }
+
+  &:hover {
+    transition: box-shadow 350ms ease, transform 375ms cubic-bezier(.175, .885, .32, 1.275), background-color 325ms ease;
+    transform: scale(1.03);
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  }
+}
+
+.small-button {
+  display: flex;
+  padding: 5px 14px;
+  align-items: center;
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+  border-radius: 50px;
+  background-color: #82A0D8;
+  color: #fff;
 }

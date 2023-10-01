@@ -6,6 +6,8 @@ const left = modalSwitch.querySelector(".left");
 const right = modalSwitch.querySelector(".right");
 const cardsButtons = document.querySelectorAll('.pricing__card button');
 let interval = document.querySelector('.pricing__card-container').dataset.interval;
+const animatedDivs = document.querySelectorAll('.animated');
+const navLinks = document.querySelectorAll('a.nav-link');
 // const navlink = document.querySelector(".nav__link");
 const stripeData = {
     monthly: {
@@ -84,29 +86,36 @@ function handlePricingCheckbox() {
     });
 }
 
-const navLinks = document.querySelectorAll('a.nav-link');
-window.addEventListener("scroll", () => {
+function isElementInViewport(el, offset = 0) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top + offset >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom - offset <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
-    if (window.scrollY > 50) {
-        navbar.setAttribute("class", "navbar scrolled navstyle");
-        // navbar.setAttribute("class", "navbar navstyle")
+function checkPosition() {
+    for (const element of animatedDivs) {
+        if (isElementInViewport(element, 600)) {
+            element.classList.add('active');
+        }
+    }
+}
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 20) {
+        navbar.classList.add("scrolled", "navstyle");
         navLinks.forEach((navlink) => navlink.style.color = "#EF9595");
     } else {
-        navbar.classList.remove("scrolled");
-        navbar.classList.remove("navstyle");
+        navbar.classList.remove("scrolled", "navstyle");
         navLinks.forEach((navlink) => navlink.style.color = "#7E7E7E");
     }
 
-    const animatedDivs = document.querySelectorAll('.animated');
-    animatedDivs.forEach((animatedDiv) => {
-        const rect = animatedDiv.getBoundingClientRect();
-
-        if(rect.top <= window.innerHeight && rect.bottom >= 0) {
-            animatedDiv.style.opacity = '1';
-        }
-    })
+    checkPosition();
 });
 
-pricingCheckbox.addEventListener("change", () => {
-    handlePricingCheckbox();
-})
+pricingCheckbox.addEventListener("load", checkPosition);
+
+pricingCheckbox.addEventListener("change", handlePricingCheckbox);
