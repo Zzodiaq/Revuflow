@@ -37,6 +37,9 @@ body {
     justify-content: center;
     align-items: baseline;
     flex-direction: column;
+    max-width: 100% !important;
+    padding: 4rem 2rem;
+    background-color: white;
     h1 {
         text-align: left;
         color: #001A33;

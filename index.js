@@ -1,5 +1,6 @@
-
-const navbar = document.querySelector("div.navbar");
+const sdNavbar = document.querySelector('revuflow-navbar');
+const sdSideMenu = document.querySelector('revuflow-side-menu');
+const navbar = sdNavbar.shadowRoot.querySelector('div.navbar');
 const modalSwitch = document.querySelector(".modalSwitch");
 const pricingCheckbox = modalSwitch.querySelector("input[type='checkbox']");
 const left = modalSwitch.querySelector(".left");
@@ -7,9 +8,9 @@ const right = modalSwitch.querySelector(".right");
 const cardsButtons = document.querySelectorAll('.pricing__card button');
 let interval = document.querySelector('.pricing__card-container').dataset.interval;
 const animatedDivs = document.querySelectorAll('.animated');
-const hamburger = document.querySelector(".nav-button");
-const sideMenu = document.querySelector(".side-menu");
-const navLinks = document.querySelectorAll('a.nav-link');
+const hamburger = sdNavbar.shadowRoot.querySelector(".nav-button");
+const sideMenu = sdSideMenu.shadowRoot.querySelector(".side-menu");
+const navLinks = sdNavbar.shadowRoot.querySelectorAll('a.nav-link');
 const stripeData = {
     monthly: {
         standard: {

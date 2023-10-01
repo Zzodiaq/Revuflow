@@ -3,123 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RevuFlow: The ultimate platform to effortlessly integrate Google reviews into your site. Let Your Reviews Do the Talking.">
+    <meta name="keywords" content="RevuFlow, Google Reviews, Customer Reviews, Webflow Integration, Webflow">
+    <meta name="author" content="RevuFlow Team">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/revuflow_logo_notext.png">
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="RevuFlow - Let Your Reviews Do the Talking">
+    <meta property="og:description" content="The ultimate platform to effortlessly integrate Google reviews into your Webflow site.">
+    <meta property="og:image" content="./assets/images/revuflow_logo_notext.png">
+    <meta property="og:url" content="https://www.revuflow.net">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RevuFlow - Let Your Reviews Do the Talking">
+    <meta name="twitter:description" content="The ultimate platform to effortlessly integrate Google reviews into your Webflow site.">
+    <meta name="twitter:image" content="./assets/images/revuflow_logo_notext.png">
+    <!-- Styles and scripts-->
     <link rel="icon" type="image/png" href="./assets/images/revuflow_logo_notext.png"/>
     <link rel="stylesheet" href="assets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e19c3df5fe.js" crossorigin="anonymous"></script>
-    <title>RevuFlow</title>
+    <title>RevuFlow - Let Your Reviews Do the Talking</title>
 </head>
 <body>
-<div class="navbar">
-    <div class="container navbar-container">
-        <div class="navbar-holder">
-            <div class="navbar-container">
-                <a href="#intro" class="brand nav-brand">
-                    <img src="assets/images/revufloLogo (2).png" class="brand-image" alt="logo">
-                </a>
-                <nav class="nav-menu">
-                    <div class="nav-links-holder">
-                        <div class="nav-links-container">
-                            <div class="nav-links">
-                                <a href="#offerings" class="nav-link">Offerings</a>
-                                <a href="#the-product" class="nav-link">The product</a>
-                                <a href="#pricing" class="nav-link">Pricing</a>
-                                <a href="#contact-us" class="nav-link">Contact Us</a>
-                            </div>
-                            <div class="nav-button-holder">
-                                <a href="#pricing" class="navbar-button">Start now</a>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <button class="nav-button">
-                    <img src="assets/images/hamburger-icon.png" width="10%" class="nav-icon" alt="hamburger icon">
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="side-menu">
-    <div class="side-menu-content">
-        <div class="side-menu-block">
-            <h1 class="side-menu-header">The company</h1>
-            <a href="#offerings">Offerings</a>
-            <a href="#the-product">The product</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#contact-us">Contact Us</a>
-        </div>
-        <div class="side-menu-block">
-            <h1 class="side-menu-header">Site plan</h1>
-            <a href="#">FAQ</a>
-            <a href="#">Terms of use</a>
-            <a href="#">Legal information</a>
-        </div>
-    </div>
-</div>
+<revuflow-navbar></revuflow-navbar>
+<revuflow-side-menu></revuflow-side-menu>
 <div class="container introduction animated" id="intro">
     <h1 class="main-title">Display your Google reviews in seconds with RevuFlow</h1>
     <div class="introduction__demoImage">
         <img src="assets/images/urba.png" alt="error">
     </div>
 </div>
-<div class="container white-section offer animated" id="offerings">
-    <h1 class="section-title">What we offer</h1>
-    <div class="offer-cards">
-        <div class="wide-card animated thin-border">
-            <div class="small-grey-card">
+<div class="container offer animated" id="offerings">
+    <div class="white-section">
+        <h1 class="section-title">What we offer</h1>
+        <div class="offer-cards">
+            <div class="wide-card animated thin-border">
+                <div class="small-grey-card">
+                    <div class="card-emoji">
+                        <div class="emoji">⚙️</div>
+                    </div>
+                    <div class="card-content">
+                        <h2>Easy Management</h2>
+                        <p class="grey-text">Easily manage your business name and widgets right from an intuitive
+                            dashboard.</p>
+                    </div>
+                </div>
+                <div class="card-image-holder">
+                    <img src="assets/images/app_home_cut.png" alt="widget choice">
+                </div>
+            </div>
+            <div class="card animated thin-border">
                 <div class="card-emoji">
-                    <div class="emoji">⚙️</div>
+                    <div class="emoji">🛡️</div>
                 </div>
                 <div class="card-content">
-                    <h2>Easy Management</h2>
-                    <p class="grey-text">Easily manage your business name and widgets right from an intuitive
-                        dashboard.</p>
+                    <h2>Boost Customer Trust</h2>
+                    <p class="grey-text">Display authentic reviews to increase trust and encourage more sales or
+                        conversions.</p>
                 </div>
             </div>
-            <div class="card-image-holder">
-                <img src="assets/images/app_home_cut.png" alt="widget choice">
+            <div class="card animated thin-border">
+                <div class="card-emoji">
+                    <div class="emoji">🔄</div>
+                </div>
+                <div class="card-content">
+                    <h2>Import Google Reviews</h2>
+                    <p class="grey-text">Import Google reviews in Webflow in a few clicks with RevuFlow. Boost trust and
+                        save time.</p>
+                </div>
             </div>
-        </div>
-        <div class="card animated thin-border">
-            <div class="card-emoji">
-                <div class="emoji">🛡️</div>
+            <div class="card animated thin-border">
+                <div class="card-emoji">
+                    <div class="emoji">🎨</div>
+                </div>
+                <div class="card-content">
+                    <h2>Stylish Widget Design</h2>
+                    <p class="grey-text">Get a widget that is crafted for your business case and fits your brand
+                        seamlessly.</p>
+                </div>
             </div>
-            <div class="card-content">
-                <h2>Boost Customer Trust</h2>
-                <p class="grey-text">Display authentic reviews to increase trust and encourage more sales or
-                    conversions.</p>
-            </div>
-        </div>
-        <div class="card animated thin-border">
-            <div class="card-emoji">
-                <div class="emoji">🔄</div>
-            </div>
-            <div class="card-content">
-                <h2>Import Google Reviews</h2>
-                <p class="grey-text">Import Google reviews in Webflow in a few clicks with RevuFlow. Boost trust and
-                    save time.</p>
-            </div>
-        </div>
-        <div class="card animated thin-border">
-            <div class="card-emoji">
-                <div class="emoji">🎨</div>
-            </div>
-            <div class="card-content">
-                <h2>Stylish Widget Design</h2>
-                <p class="grey-text">Get a widget that is crafted for your business case and fits your brand
-                    seamlessly.</p>
-            </div>
-        </div>
-        <div class="card animated thin-border">
-            <div class="card-emoji">
-                <div class="emoji">🚀</div>
-            </div>
-            <div class="card-content">
-                <h2>Save time with RevuFlow</h2>
-                <p class="grey-text">Add a branded Google Review Widget quickly and easily. No compromises on
-                    effectiveness.</p>
+            <div class="card animated thin-border">
+                <div class="card-emoji">
+                    <div class="emoji">🚀</div>
+                </div>
+                <div class="card-content">
+                    <h2>Save time with RevuFlow</h2>
+                    <p class="grey-text">Add a branded Google Review Widget quickly and easily. No compromises on
+                        effectiveness.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -310,29 +285,10 @@
     <p class="grey-text">Any question ? Don't hesitate to contact us. We'll answer at any moment !</p>
     <a href="mailto:support@revuflow.net" class="animated">Send a message to RevuFlow team</a>
 </div>
-<div class="container footer">
-    <div class="footer-wrapper">
-        <a href="/" class="footer-brand">
-            <img src="./assets/images/revufloLogo%20(2).png" alt="revuflow logo">
-            <p class="footer-paragraph-holder">Let your reviews do the talking.</p>
-        </a>
-        <div class="footer-content">
-            <div class="footer-block">
-                <div class="title-small">Company</div>
-                <a href="#offerings" class="footer-link">Offerings</a>
-                <a href="#the-product" class="footer-link">The product</a>
-                <a href="#pricing" class="footer-link">Pricing</a>
-                <a href="#contact-us" class="footer-link">Contact Us</a>
-            </div>
-            <div class="footer-block">
-                <div class="title-small">Site plan</div>
-                <a href="#" class="footer-link">FAQ</a>
-                <a href="#" class="footer-link">Terms of use</a>
-                <a href="#" class="footer-link">Legal information</a>
-            </div>
-        </div>
-    </div>
-</div>
+<revuflow-footer></revuflow-footer>
 </body>
+<script src="assets/web-components/navbar.js"></script>
+<script src="assets/web-components/footer.js"></script>
+<script src="assets/web-components/side-menu.js"></script>
 <script src="index.js"></script>
 </html>

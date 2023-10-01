@@ -46,6 +46,8 @@
   }
 
   .introduction {
+
+    &.container { padding-top: 2rem; }
     h1.main-title {
       padding: 0 1rem;
       font-size: 2rem;
@@ -64,11 +66,15 @@
   }
 
   .white-section {
-    padding: 1rem;
+    padding: 1rem 0 1rem;
     align-items: center;
   }
 
   .offer {
+
+    &.container {
+      padding : 2rem 1rem;
+    }
 
     .offer-cards {
       grid-template-columns: repeat(1, 1fr) !important;
@@ -207,6 +213,9 @@
   }
 
   .introduction {
+
+    &.container { padding-top: 2rem; }
+
     h1.main-title {
       padding: 0 2rem;
       font-size: 3rem;
@@ -225,11 +234,15 @@
   }
 
   .white-section {
-    padding: 1.8rem;
+    padding: 1rem 2rem 2rem;
     align-items: center;
   }
 
   .offer {
+
+    &.container {
+      padding : 2rem 0;
+    }
 
     .offer-cards {
       grid-template-columns: repeat(1, 1fr) !important;
@@ -321,7 +334,7 @@
   }
 
   .white-section {
-    padding: 2rem;
+    padding: 2rem 0 4rem;
   }
 
   .offer {
@@ -420,7 +433,7 @@
   }
 
   .white-section {
-    padding: 2rem 4rem 4rem;
+    padding: 2rem 0 4rem;
   }
 }
 
@@ -432,12 +445,12 @@
   }
 
   .white-section {
-    padding: 2rem 5rem 4rem;
+    padding: 2rem 2rem 4rem;
   }
 }
 
 @media screen and (min-width: 1441px) {
   .container {
-    max-width: 1340px;
+    max-width: 1200px;
   }
 }
