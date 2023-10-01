@@ -117,5 +117,6 @@ window.addEventListener("scroll", () => {
 });
 
 pricingCheckbox.addEventListener("load", checkPosition);
+pricingCheckbox.addEventListener("DOMContentLoaded", checkPosition);
 
 pricingCheckbox.addEventListener("change", handlePricingCheckbox);
