@@ -578,7 +578,7 @@ div.navbar {
 div.navbar .navbar-container {
   display: flex;
   height: 100%;
-  padding: 0;
+  padding: 0 1rem;
   align-items: center;
 }
 div.navbar .navbar-container .nav-button {
