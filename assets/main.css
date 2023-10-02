@@ -155,10 +155,10 @@ body {
   grid-row-end: span 1;
 }
 .product .features-holder .grid-layout-img-l .right-el .content .title {
-  font-size: 2rem;
+  font-size: 22px;
   color: #001A33;
 }
-.product .features-holder .grid-layout-img-l .right-el .content .title h3 {
+.product .features-holder .grid-layout-img-l .right-el .content .title h2 {
   margin: 0;
 }
 .product .features-holder .grid-layout-img-r {
@@ -203,10 +203,10 @@ body {
   grid-row-end: span 1;
 }
 .product .features-holder .grid-layout-img-r .left-el .content .title {
-  font-size: 2rem;
+  font-size: 22px;
   color: #001A33;
 }
-.product .features-holder .grid-layout-img-r .left-el .content .title h3 {
+.product .features-holder .grid-layout-img-r .left-el .content .title h2 {
   margin: 0;
 }
 
