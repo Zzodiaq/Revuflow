@@ -1,4 +1,4 @@
-# Proposition de logo pour RevuFlow
+# RevuFlow
 
 ## Qu'est-ce que RevuFlow ?
 
