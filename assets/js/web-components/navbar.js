@@ -21,13 +21,13 @@ class RevuflowNavbar extends HTMLElement {
                 <div class="nav-links-holder">
                   <div class="nav-links-container">
                     <div class="nav-links">
-                      <a href="https://www.revuflow.net#offerings" class="nav-link">Offerings</a>
-                      <a href="https://www.revuflow.net#the-product" class="nav-link">The product</a>
-                      <a href="https://www.revuflow.net#pricing" class="nav-link">Pricing</a>
-                      <a href="https://www.revuflow.net#contact-us" class="nav-link">Contact Us</a>
+                      <a href="#offerings" class="nav-link">Offerings</a>
+                      <a href="#the-product" class="nav-link">The product</a>
+                      <a href="#pricing" class="nav-link">Pricing</a>
+                      <a href="#contact-us" class="nav-link">Contact Us</a>
                     </div>
                     <div class="nav-button-holder">
-                      <a href="https://www.revuflow.net#pricing" class="navbar-button">Start now</a>
+                      <a href="#pricing" class="navbar-button">Start now</a>
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,9 @@
 @media (max-width: 575px) {
 
+  .container-article {
+    padding: 1rem;
+  }
+
   .navbar {
 
     .container {
@@ -168,6 +172,10 @@
 
 @media (min-width: 576px) and (max-width: 767px) {
 
+  .container-article {
+    padding: 3rem;
+  }
+
   .navbar {
 
     .container {
@@ -313,6 +321,10 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+  .container-article {
+    padding: 4rem;
+  }
+
   .nav-links > a {
     font-size: 14px !important;
   }
@@ -393,7 +405,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
+  .container, .container-article {
     padding: 2rem;
   }
 
