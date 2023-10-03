@@ -1,4 +1,7 @@
-document.addEventListener('contentLoaded', () => {
+document.addEventListener('contentLoaded', contentLoadedCallback)
+function contentLoadedCallback() {
+    document.removeEventListener('pageLoaded', pageLoadedCallback);
+
     const sdNavbar = document.querySelector('revuflow-navbar');
     const sdSideMenu = document.querySelector('revuflow-side-menu');
     const navbar = sdNavbar.shadowRoot.querySelector('div.navbar');
@@ -130,6 +133,7 @@ document.addEventListener('contentLoaded', () => {
     checkPosition();
 
     hamburger.addEventListener("touchstart", (e) => {
+        console.log('content', hamburger)
         if (sideMenu.style.width === "60%") {
             sideMenu.style.width = "0";
         } else {
@@ -149,15 +153,18 @@ document.addEventListener('contentLoaded', () => {
     });
 
     pricingCheckbox.addEventListener("change", handlePricingCheckbox);
-});
+}
 
-document.addEventListener('pageLoaded', () => {
+document.addEventListener('pageLoaded', pageLoadedCallback);
+
+function pageLoadedCallback() {
+    document.removeEventListener('contentLoaded', contentLoadedCallback);
+
     const sdNavbar = document.querySelector('revuflow-navbar');
     const sdSideMenu = document.querySelector('revuflow-side-menu');
     const hamburger = sdNavbar.shadowRoot.querySelector(".nav-button");
     const sideMenu = sdSideMenu.shadowRoot.querySelector(".side-menu");
 
-    console.log('click')
     hamburger.addEventListener("touchstart", (e) => {
         if (sideMenu.style.width === "60%") {
             sideMenu.style.width = "0";
@@ -176,4 +183,4 @@ document.addEventListener('pageLoaded', () => {
     sideMenu.addEventListener("touchstart", (e) => {
         e.stopPropagation();
     });
-});
+}
