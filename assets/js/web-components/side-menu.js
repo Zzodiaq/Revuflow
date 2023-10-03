@@ -5,7 +5,7 @@ class RevuflowSideMenu extends HTMLElement {
 
         const styleSheet = document.createElement('link');
         styleSheet.setAttribute('rel', 'stylesheet');
-        styleSheet.setAttribute('href', 'assets/main.css');
+        styleSheet.setAttribute('href', 'assets/styles/main.css');
         shadowRoot.appendChild(styleSheet);
 
         const container = document.createElement('div');
