@@ -31,19 +31,16 @@ function fetchContent(url, eventToDispatch = null) {
 
 
 window.addEventListener("popstate", (event) => {
-    console.log('popstate')
     routePage(event.state ? event.state.page : null, 'contentLoaded');
 });
 
 function navigate(page) {
-    console.log(page)
     var stateObj = {page: page};
     window.history.pushState(stateObj, "", '#' + page);
     routePage(page, 'contentLoaded');
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    console.log('DOMContentLoaded')
     const page = window.location.hash ? window.location.hash.slice(1) : 'home';
     routePage(page, 'contentLoaded');
 }, false);
