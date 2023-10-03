@@ -5,7 +5,7 @@ class RevuflowFooter extends HTMLElement {
 
         const styleSheet = document.createElement('link');
         styleSheet.setAttribute('rel', 'stylesheet');
-        styleSheet.setAttribute('href', 'assets/main.css');
+        styleSheet.setAttribute('href', 'assets/styles/main.css');
         shadowRoot.appendChild(styleSheet);
 
         const container = document.createElement('div');
@@ -26,9 +26,9 @@ class RevuflowFooter extends HTMLElement {
             </div>
             <div class="footer-block">
               <div class="title-small">Site plan</div>
-              <a href="#" class="footer-link">FAQ</a>
-              <a href="#" class="footer-link">Terms of use</a>
-              <a href="#" class="footer-link">Legal information</a>
+              <button onclick="navigate('faq')" class="footer-link">FAQ</a>
+              <button onclick="navigate('terms-of-use')" class="footer-link">Terms of use</button>
+              <button onclick="navigate('legal-information')" class="footer-link">Legal information</a>
             </div>
           </div>
         </div>
