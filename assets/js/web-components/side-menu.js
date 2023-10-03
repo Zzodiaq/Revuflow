@@ -14,16 +14,16 @@ class RevuflowSideMenu extends HTMLElement {
         <div class="side-menu-content">
           <div class="side-menu-block">
             <h1 class="side-menu-header">The company</h1>
-            <a href="https://www.revuflow.net#offerings">Offerings</a>
-            <a href="https://www.revuflow.net#the-product">The product</a>
-            <a href="https://www.revuflow.net#pricing">Pricing</a>
-            <a href="https://www.revuflow.net#contact-us">Contact Us</a>
+            <a href="#offerings">Offerings</a>
+            <a href="#the-product">The product</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact-us">Contact Us</a>
           </div>
           <div class="side-menu-block">
             <h1 class="side-menu-header">Site plan</h1>
-            <a href="#">FAQ</a>
-            <a href="#">Terms of use</a>
-            <a href="#">Legal information</a>
+            <button onclick="navigate('faq')">FAQ</button>
+            <button onclick="navigate('terms-of-service')">Terms of service</button>
+            <button onclick="navigate('legal-information')">Legal information</button>
           </div>
         </div>
         `;
