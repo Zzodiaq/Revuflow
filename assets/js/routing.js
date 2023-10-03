@@ -1,64 +1,49 @@
-function routePage(page) {
+function routePage(page, eventToDispatch = null) {
     switch (page) {
         case 'home':
-            fetch('/homepage.html')
-                .then(response => response.text())
-                .then(indexHtml => {
-                    document.querySelector('.page-content').innerHTML = indexHtml;
-                    const event = new Event('contentLoaded');
-                    document.dispatchEvent(event);
-                });
+            fetchContent('/homepage.html', eventToDispatch);
             break;
         case 'terms-of-use':
-            fetch('/terms_of_use.html')
-                .then(response => response.text())
-                .then(termsHtml => {
-                    document.querySelector('.page-content').innerHTML = termsHtml;
-                });
+            fetchContent('/terms_of_use.html');
             break;
         case 'faq':
-            fetch('/faq.html')
-                .then(response => response.text())
-                .then(faqHtml => {
-                    document.querySelector('.page-content').innerHTML = faqHtml;
-                });
+            fetchContent('/faq.html');
             break;
         case 'legal-information':
-            fetch('/legal_information.html')
-                .then(response => response.text())
-                .then(legalInformationHtml => {
-                    document.querySelector('.page-content').innerHTML = legalInformationHtml;
-                });
+            fetchContent('/legal_information.html');
             break;
         default:
-            fetch('/404.html')
-                .then(response => response.text())
-                .then(notFoundHtml => {
-                    document.querySelector('.page-content').innerHTML = notFoundHtml;
-                });
+            fetchContent('/homepage.html', eventToDispatch);
     }
+}
+
+function fetchContent(url, eventToDispatch = null) {
+    fetch(url)
+        .then(response => response.text())
+        .then(html => {
+            document.querySelector('.page-content').innerHTML = html;
+            if (eventToDispatch) {
+                const event = new Event(eventToDispatch);
+                document.dispatchEvent(event);
+            }
+        });
 }
 
 
 window.addEventListener("popstate", (event) => {
     console.log('popstate')
-    routePage(event.state ? event.state.page : null);
-    window.history.pushState({}, '', '#' + page);
+    routePage(event.state ? event.state.page : null, 'contentLoaded');
 });
 
 function navigate(page) {
     console.log(page)
     var stateObj = {page: page};
     window.history.pushState(stateObj, "", '#' + page);
-    routePage(page);
+    routePage(page, 'contentLoaded');
 }
 
-window.addEventListener('hashchange', () => {
-    const page = window.location.hash ? window.location.hash.slice(1) : 'home';
-    routePage(page);
-}, false);
-
 window.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded')
     const page = window.location.hash ? window.location.hash.slice(1) : 'home';
-    routePage(page);
+    routePage(page, 'contentLoaded');
 }, false);

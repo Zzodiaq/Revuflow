@@ -103,7 +103,7 @@ document.addEventListener('contentLoaded', () => {
     if (window.innerWidth <= 575) {
         offset = 1400;
     } else {
-        offset = 600;
+        offset = 750;
     }
 
     function checkPosition() {
