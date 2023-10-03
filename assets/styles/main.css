@@ -347,13 +347,16 @@ body {
   font-size: 18px;
   text-transform: uppercase;
 }
-.side-menu .side-menu-block a {
+.side-menu .side-menu-block button, .side-menu .side-menu-block a {
+  text-decoration: none;
   padding: 8px 25px;
   display: block;
-  text-decoration: none;
   color: #818181;
+  border: none;
+  font-size: 16px;
+  background-color: unset;
 }
-.side-menu .side-menu-block a:hover {
+.side-menu .side-menu-block button:hover, .side-menu .side-menu-block a:hover {
   color: #f1f1f1;
 }
 
@@ -513,6 +516,23 @@ html {
   max-width: 1200px;
   padding-bottom: 4rem;
   padding-top: 4rem;
+}
+
+.container-article {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.black-text {
+  color: #494949;
+  margin-bottom: 2rem;
+}
+
+.small-title {
+  margin: 2rem 0 1rem;
 }
 
 .white-section {
@@ -708,6 +728,9 @@ div.card-emoji:hover {
 }
 
 @media (max-width: 575px) {
+  .container-article {
+    padding: 1rem;
+  }
   .navbar .container {
     padding: 0 1rem !important;
   }
@@ -837,6 +860,9 @@ div.card-emoji:hover {
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
+  .container-article {
+    padding: 3rem;
+  }
   .navbar .container .navbar-container {
     padding: 0 0.5rem !important;
     display: flex;
@@ -944,6 +970,9 @@ div.card-emoji:hover {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .container-article {
+    padding: 4rem;
+  }
   .nav-links > a {
     font-size: 14px !important;
   }
@@ -998,7 +1027,7 @@ div.card-emoji:hover {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container {
+  .container, .container-article {
     padding: 2rem;
   }
   .introduction h1.main-title {

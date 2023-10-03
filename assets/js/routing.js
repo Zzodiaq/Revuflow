@@ -3,8 +3,8 @@ function routePage(page, eventToDispatch = null) {
         case 'home':
             fetchContent('/homepage.html', eventToDispatch);
             break;
-        case 'terms-of-use':
-            fetchContent('/terms_of_use.html');
+        case 'terms-of-service':
+            fetchContent('/terms_of_service.html', 'pageLoaded');
             break;
         case 'faq':
             fetchContent('/faq.html');

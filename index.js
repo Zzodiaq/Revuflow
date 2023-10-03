@@ -127,28 +127,53 @@ document.addEventListener('contentLoaded', () => {
     });
 
     pricingCheckbox.addEventListener("load", checkPosition);
-    document.addEventListener("DOMContentLoaded", () => {
-        checkPosition();
+    checkPosition();
 
-        hamburger.addEventListener("touchstart", (e) => {
-            if (sideMenu.style.width === "60%") {
-                sideMenu.style.width = "0";
-            } else {
-                sideMenu.style.width = "60%";
-            }
-            e.stopPropagation();
-        });
+    hamburger.addEventListener("touchstart", (e) => {
+        if (sideMenu.style.width === "60%") {
+            sideMenu.style.width = "0";
+        } else {
+            sideMenu.style.width = "60%";
+        }
+        e.stopPropagation();
+    });
 
-        document.addEventListener("touchstart", () => {
-            if (sideMenu.style.width === "60%") {
-                sideMenu.style.width = "0";
-            }
-        });
+    document.addEventListener("touchstart", () => {
+        if (sideMenu.style.width === "60%") {
+            sideMenu.style.width = "0";
+        }
+    });
 
-        sideMenu.addEventListener("touchstart", (e) => {
-            e.stopPropagation();
-        });
+    sideMenu.addEventListener("touchstart", (e) => {
+        e.stopPropagation();
     });
 
     pricingCheckbox.addEventListener("change", handlePricingCheckbox);
+});
+
+document.addEventListener('pageLoaded', () => {
+    const sdNavbar = document.querySelector('revuflow-navbar');
+    const sdSideMenu = document.querySelector('revuflow-side-menu');
+    const hamburger = sdNavbar.shadowRoot.querySelector(".nav-button");
+    const sideMenu = sdSideMenu.shadowRoot.querySelector(".side-menu");
+
+    console.log('click')
+    hamburger.addEventListener("touchstart", (e) => {
+        if (sideMenu.style.width === "60%") {
+            sideMenu.style.width = "0";
+        } else {
+            sideMenu.style.width = "60%";
+        }
+        e.stopPropagation();
+    });
+
+    document.addEventListener("touchstart", () => {
+        if (sideMenu.style.width === "60%") {
+            sideMenu.style.width = "0";
+        }
+    });
+
+    sideMenu.addEventListener("touchstart", (e) => {
+        e.stopPropagation();
+    });
 });
