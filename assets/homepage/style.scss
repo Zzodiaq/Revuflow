@@ -249,10 +249,11 @@ body {
         justify-content: center;
         gap: 1rem;
         .left {
-            color: white;
-            background-color: #82A0D8;
+            color: black;
+            background-color: white;
             padding: 0.9rem 1rem;
             border-radius: 20px;
+            box-shadow: 0 14px 17px 0 rgba(35, 35, 35, 0.05);
             p {
                 margin: 0;
                 font-size: 13px;

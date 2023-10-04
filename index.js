@@ -56,20 +56,24 @@ function handlePage(type) {
                 interval = "yearly";
                 buttonBackgroundColor = "black";
                 // update checkbox style
-                left.style.backgroundColor = "white";
+                left.style.backgroundColor = "unset";
                 left.style.color = "black";
-                right.style.backgroundColor = "black";
-                right.style.color = "#FFD95A";
+                left.style.boxShadow = "unset";
+                right.style.backgroundColor = "white";
+                right.style.color = "black";
+                right.style.boxShadow = "0 14px 17px 0 rgba(35, 35, 35, 0.05)";
             } else {
                 // update variables values
                 intervalText = "month";
                 interval = "monthly";
                 buttonBackgroundColor = "#82A0D8";
                 // update checkbox style
-                left.style.backgroundColor = "#82A0D8";
-                left.style.color = "white";
-                right.style.backgroundColor = "white";
+                left.style.backgroundColor = "white";
+                left.style.color = "black";
+                left.style.boxShadow = "0 14px 17px 0 rgba(35, 35, 35, 0.05)";
+                right.style.backgroundColor = "unset";
                 right.style.color = "black";
+                right.style.boxShadow = "unset";
             }
             // loop through buttons
             cardsButtons.forEach((button) => {
@@ -136,7 +140,6 @@ function handlePage(type) {
         // Mettez ici le code spécifique aux pages annexes
     }
 
-    // Code commun entre la page d'accueil et les pages annexes
     if (hamburger && sideMenu) {
 
         document.addEventListener("touchstart", () => {
@@ -148,7 +151,7 @@ function handlePage(type) {
         function addHamburgerListener() {
             if (!isHamburgerListenerAdded) {
                 hamburger.addEventListener("touchstart", hamburgerHandler);
-                isHamburgerListenerAdded = true;  // Mettre à jour l'indicateur
+                isHamburgerListenerAdded = true;
             }
         }
 
