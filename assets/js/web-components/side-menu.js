@@ -21,7 +21,7 @@ class RevuflowSideMenu extends HTMLElement {
           </div>
           <div class="side-menu-block">
             <h1 class="side-menu-header">Site plan</h1>
-            <button onclick="navigate('faq')">FAQ</button>
+            <!-- <button onclick="navigate('faq')">FAQ</button> -->
             <button onclick="navigate('terms-of-service')">Terms of service</button>
             <button onclick="navigate('legal-information')">Legal information</button>
           </div>

@@ -224,8 +224,8 @@ body {
   gap: 1rem;
 }
 .pricing .modalSwitch .left {
-  color: white;
-  background-color: #82A0D8;
+  color: black;
+  background-color: white;
   padding: 0.9rem 1rem;
   border-radius: 20px;
 }
