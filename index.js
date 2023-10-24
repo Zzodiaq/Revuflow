@@ -46,13 +46,10 @@ function handlePage(type) {
         };
 
         function handlePricingCheckbox() {
-            // initialize variables
-            let intervalText = "";
             let buttonBackgroundColor = "";
             // check which side is active
             if ("monthly" === interval) {
                 // update variables values
-                intervalText = "year";
                 interval = "yearly";
                 buttonBackgroundColor = "black";
                 // update checkbox style
@@ -64,7 +61,6 @@ function handlePage(type) {
                 right.style.boxShadow = "0 14px 17px 0 rgba(35, 35, 35, 0.05)";
             } else {
                 // update variables values
-                intervalText = "month";
                 interval = "monthly";
                 buttonBackgroundColor = "#82A0D8";
                 // update checkbox style
