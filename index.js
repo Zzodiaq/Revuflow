@@ -32,11 +32,11 @@ function handlePage(type) {
             yearly: {
                 standard: {
                     url: 'https://buy.stripe.com/3cs8zAdQ3fyZ5sAbIK',
-                    price: '$30',
+                    price: '$2.5',
                 },
                 premium: {
                     url: 'https://buy.stripe.com/cN28zA9zN4Ul3ks7sw',
-                    price: '$60',
+                    price: '$5',
                 },
                 custom: {
                     url: 'https://checkout.stripe.com/c/pay/cs_live_a1kJqHo78Qpdppp0HiN1fPKIHWrpT26J8ENymi9ZhxpfO8m1829Na6zGcN#fidkdWxOYHwnPyd1blppbHNgWjA0S3FdUldMRGl2MjB0VnxWXDdiNURQMF1obDdzcnZWaHdMZ3dLaGprSTVwQj1WV1VAaUJIPDxudVRQUkcyQD19aUNNc0NINEdIcWNKTD1IT2ZwU0pOb3NjNTVgQjVyXUlJcScpJ3VpbGtuQH11anZgYUxhJz8nPXJIYjc3PXNPNUAwMkRMNz09J3gl',
