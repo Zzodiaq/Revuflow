@@ -86,7 +86,6 @@ function handlePage(type) {
                 // set card's price and interval
                 if (price) {
                     pricingCard.querySelector('h2.plan-price').textContent = price;
-                    pricingCard.querySelector(".interval-text").innerHTML = `per<br>${intervalText}`;
                 }
             });
         }
