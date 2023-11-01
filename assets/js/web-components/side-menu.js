@@ -24,6 +24,7 @@ class RevuflowSideMenu extends HTMLElement {
             <!-- <button onclick="navigate('faq')">FAQ</button> -->
             <button onclick="navigate('terms-of-service')">Terms of service</button>
             <button onclick="navigate('legal-information')">Legal information</button>
+            <a href="https://status.revuflow.net/" target="_blank">Status</a>
           </div>
         </div>
         `;

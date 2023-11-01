@@ -28,7 +28,8 @@ class RevuflowFooter extends HTMLElement {
               <div class="title-small">Site plan</div>
               <!-- <button onclick="navigate('faq')" class="footer-link">FAQ</a> -->
               <button onclick="navigate('terms-of-service')" class="footer-link">Terms of service</button>
-              <button onclick="navigate('legal-information')" class="footer-link">Legal information</a>
+              <button onclick="navigate('legal-information')" class="footer-link">Legal information</button>
+              <a href="https://status.revuflow.net/" target="_blank" class="footer-link">Status</a>
             </div>
           </div>
         </div>

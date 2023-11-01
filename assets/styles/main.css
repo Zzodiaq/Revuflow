@@ -228,6 +228,7 @@ body {
   background-color: white;
   padding: 0.9rem 1rem;
   border-radius: 20px;
+  box-shadow: 0 14px 17px 0 rgba(35, 35, 35, 0.05);
 }
 .pricing .modalSwitch .left p {
   margin: 0;
@@ -436,6 +437,7 @@ body {
   text-transform: uppercase;
 }
 .footer .footer-wrapper .footer-content .footer-block .footer-link {
+  text-align: left;
   transition: color 475ms ease;
   color: #7c8995;
   font-size: 16px;
@@ -533,6 +535,10 @@ html {
 
 .small-title {
   margin: 2rem 0 1rem;
+}
+
+.line-height-doubled {
+  line-height: 2rem;
 }
 
 .white-section {
