@@ -27,7 +27,7 @@ class RevuflowNavbar extends HTMLElement {
                       <a href="#contact-us" class="nav-link">Contact Us</a>
                     </div>
                     <div class="nav-button-holder">
-                      <a href="#pricing" class="navbar-button">Setup in Webflow now</a>
+                      <a href="https://webflow.com/apps/detail/revuflow" class="navbar-button">Setup in Webflow now</a>
                     </div>
                   </div>
                 </div>
